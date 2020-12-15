@@ -1,0 +1,24 @@
+3dfecf7 HEAD@{0}: merge develop: Fast-forward
+a2d9bc3 HEAD@{1}: checkout: moving from develop to main
+3dfecf7 HEAD@{2}: commit (merge): change index.html
+502558a HEAD@{3}: merge images: Fast-forward
+0b54f53 HEAD@{4}: checkout: moving from styles to develop
+e89dacb HEAD@{5}: commit: change index.html
+ef6ed36 HEAD@{6}: commit: add styles
+0b54f53 HEAD@{7}: checkout: moving from develop to styles
+0b54f53 HEAD@{8}: checkout: moving from images to develop
+502558a HEAD@{9}: checkout: moving from styles to images
+0b54f53 HEAD@{10}: checkout: moving from develop to styles
+0b54f53 HEAD@{11}: checkout: moving from images to develop
+502558a HEAD@{12}: checkout: moving from develop to images
+0b54f53 HEAD@{13}: reset: moving to HEAD
+0b54f53 HEAD@{14}: checkout: moving from styles to develop
+0b54f53 HEAD@{15}: checkout: moving from develop to styles
+0b54f53 HEAD@{16}: checkout: moving from images to develop
+502558a HEAD@{17}: commit: Change index.html
+3390212 HEAD@{18}: commit: Add photos
+0b54f53 HEAD@{19}: checkout: moving from develop to images
+0b54f53 HEAD@{20}: commit: 2nd commit
+a2d9bc3 HEAD@{21}: checkout: moving from main to develop
+a2d9bc3 HEAD@{22}: commit: 1st commit
+f802682 HEAD@{23}: clone: from git@github.com:bamiks/DevOps_online_Lviv_2020Q42021Q1.git
