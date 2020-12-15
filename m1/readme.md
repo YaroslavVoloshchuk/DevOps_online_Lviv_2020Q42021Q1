@@ -1,3 +1,4 @@
-###Step 1. Install and config GIT###
+Step 1. Install and config GIT
 
 ![install](images/gitinstall.png)
+![config](images/gitconfig.png)
