@@ -1,5 +1,6 @@
 
 Q: What are the most popular hypervisors for infrastructure virtualization?
+
 A: They are Oracle VM Virtual box, VMWare vSphere, MS Hyper-V
 
 Q: Briefly describe the main differences of the most popular hypervisors
@@ -9,17 +10,17 @@ A: There are 2 types of hypervisors:
 ![](images/scr8.png)
 
   Type 1: hypervisor runs directly on the host machine's physical hardware:
-        Xen (XENSERVER, Citrix Hypervisor)
-        VM Server for SPARC (Oracle)
-        VM Server for x86 (Oracle)
-        Hyper-V (Microsoft)
-        VMware’s ESX/ESXi
+        VMware ESXi
+	Microsoft Hyper-V
+	open source KVM
 
     Type 2: hypervisor is typically installed on top of an existing OS:
-        VMware Workstation
-        VMware Player
-        VirtualBox (Oracle)
-        Parallels Desktop (Mac) 
+        VMware Fusion
+	Oracle VM VirtualBox
+	Oracle VM Server for x86
+	Oracle Solaris Zones
+	Parallels
+	VMware Workstation.
 
  Part 2. Work with Virtual box
 
