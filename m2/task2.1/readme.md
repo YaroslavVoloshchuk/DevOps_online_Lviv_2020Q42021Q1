@@ -20,4 +20,7 @@ Then cloned VM1, created a group of two VM and took snapshots, exported VM1
 Imported VM from *.ova file
 ![](images/scr5.png)
 
+Configured USB and shared folder:
 
+![](images/scr6.png)
+![](images/scr7.png)
