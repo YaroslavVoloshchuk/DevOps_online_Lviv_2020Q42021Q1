@@ -9,6 +9,6 @@ A:
 
 I installed  Virtual box on Ubuntu Desktop (main host) and downloaded latest stable version  UbuntuServer (20.04). Then created VM1 and installed Ubuntu
 
-!(images/scr1.png)
-!(images/scr2.png)
+![](images/scr1.png)
+![](images/scr2.png)
 
