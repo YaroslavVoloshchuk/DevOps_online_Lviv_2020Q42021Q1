@@ -10,11 +10,13 @@ A: There are 2 types of hypervisors:
 ![](images/scr8.png)
 
   Type 1: hypervisor runs directly on the host machine's physical hardware:
+
         VMware ESXi
 	Microsoft Hyper-V
 	open source KVM
 
-    Type 2: hypervisor is typically installed on top of an existing OS:
+  Type 2: hypervisor is typically installed on top of an existing OS:
+    
         VMware Fusion
 	Oracle VM VirtualBox
 	Oracle VM Server for x86
