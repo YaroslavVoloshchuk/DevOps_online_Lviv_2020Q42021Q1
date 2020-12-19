@@ -12,3 +12,12 @@ I installed  Virtual box on Ubuntu Desktop (main host) and downloaded latest sta
 ![](images/scr1.png)
 ![](images/scr2.png)
 
+Then cloned VM1, created a group of two VM and took snapshots, exported VM1
+
+![](images/scr3.png)
+![](images/scr4.png)
+
+Imported VM from *.ova file
+![](images/scr5.png)
+
+
