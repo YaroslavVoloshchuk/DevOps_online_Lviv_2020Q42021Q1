@@ -43,3 +43,24 @@ Configured USB and shared folder:
 
 ![](images/scr6.png)
 ![](images/scr7.png)
+
+Then I configured the connections of different network modes (Bridge and NAT). Ping host<->VMs,VM1<->VM2, VMs to internet:
+
+![](images/scr9.png)
+![](images/scr10.png)
+![](images/scr11.png)
+
+| Connection                | Ping |   |
+|---------------------------|------|---|
+| VM1 <\-> VM2 \(Bridged\)  | \+   |   |
+| Host<\->VMs \(Bridged\)   | \+   |   |
+| Host to VM\(NAT\)         | \-   |   |
+| VMs\(NAT\) to internet    | \+   |   |
+| VMs\(Bridge\) to internet | \+   |   |
+| VMs\(Bridge\) to host     | \+   |   |
+| VMs\(NAT\) to host        | \+   |   |
+
+
+Then work with CLI through VBoxManage:
+
+![](images/scr12.png)
