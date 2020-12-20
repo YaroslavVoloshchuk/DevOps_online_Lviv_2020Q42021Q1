@@ -64,3 +64,18 @@ Then I configured the connections of different network modes (Bridge and NAT). P
 Then work with CLI through VBoxManage:
 
 ![](images/scr12.png)
+![](images/scr13.png)
+
+Part 3. Work with Vagrant
+
+Vagrant init and vagrant up:
+![](images/scr14.png)
+
+Connect to the VM using SSH:
+![](images/scr15.png)
+
+Stop and delete the created VM:
+![](images/scr16.png)
+
+Create own Vagrant box:
+
