@@ -68,13 +68,17 @@ Then work with CLI through VBoxManage:
 
 Part 3. Work with Vagrant
 
+
 Vagrant init and vagrant up:
+
 ![](images/scr14.png)
 
 Connect to the VM using SSH:
+
 ![](images/scr15.png)
 
 Stop and delete the created VM:
+
 ![](images/scr16.png)
 
 Create own Vagrant box:
