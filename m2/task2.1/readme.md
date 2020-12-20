@@ -83,3 +83,4 @@ Stop and delete the created VM:
 
 Create own Vagrant box:
 
+![](images/scr17.png)
