@@ -81,6 +81,6 @@ Stop and delete the created VM:
 
 ![](images/scr16.png)
 
-Create own Vagrant box:
+Then I created own Vagrant box  with CentOS:
 
 ![](images/scr17.png)
