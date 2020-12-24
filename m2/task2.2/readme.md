@@ -28,3 +28,30 @@ Created EBS/Volume and attached Disk_D to my instance:
 
 Mounted DiskD and created and saved some file on DiskD:
 ![](images/scr9.png)
+
+Then created from a snapshot AMIs and launched third instance from it
+
+![](images/scr10.png)
+
+And dettached disk_D from the 2nd instance and attached Disk_D to the new instance:
+
+![](images/scr11.png)
+
+Then launched and configured a Wordpress instance with Amazon Lightsail:
+
+![](images/scr12.png)
+![](images/scr13.png)
+
+Then I created bucket in Amazon S3 and uploaded some files and folder. Then I deleted file:
+
+![](images/scr14.png)
+
+Then I created IAM User, installed and configured AWS-CLI and uploaded/downloaded some files
+
+![](images/scr15.png)
+![](images/scr16.png)
+
+I explored possibilities of creating my own domain and domain name
+in Route 53 console (Route 53 is AWS’s DNS service).
+
+![](images/scr17.png)
