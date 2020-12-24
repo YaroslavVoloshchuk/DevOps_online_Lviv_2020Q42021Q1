@@ -17,7 +17,7 @@ Connected ssh:
 ![](images/scr6.png)
 
 
-Created a snapshot my instance as a backup:
+Created a snapshot my instance:
 
 ![](images/scr5.png)
 
@@ -55,3 +55,11 @@ I explored possibilities of creating my own domain and domain name
 in Route 53 console (Route 53 is AWS’s DNS service).
 
 ![](images/scr17.png)
+
+Then I created a cluster (Amazon ESC) and ran the online demo aplication
+
+![](images/scr18.png)
+
+Created a static website on Amazon S3:
+
+http://websitevoloshchuk.s3-website.eu-central-1.amazonaws.com
