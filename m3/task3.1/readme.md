@@ -5,6 +5,7 @@ Step 1. Connected to VM for ssh. Downloaded MySQL server for Ubuntu on VM. Insta
 
 Step 2. Database schema (3 tables):
 
+![](images/schema.png)
 
 Step 3. Created database (bamikdb), created tables (classes, cars and owners)  and filled in tables (INSERT INTO tables):
 
