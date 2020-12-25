@@ -42,3 +42,10 @@ mysql -h bamikdb.cvnmlmyvdtuz.eu-central-1.rds.amazonaws.com -P 3306 -u admin -p
 
 ![](images/scr8.png)
 
+SELECT with table:
+
+![](images/scr9.png)
+
+Step 8. Created snapshot RDS:
+
+![](images/scr10.png)
