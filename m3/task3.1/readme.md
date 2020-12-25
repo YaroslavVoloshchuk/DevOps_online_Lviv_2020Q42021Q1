@@ -27,9 +27,6 @@ Step 5. Created a new user with different privileges and connected to db. Made a
 Step 6. Made backup my database, deleted table and restored:
 
 voloshchuk@s1-voloshchuk:~$ sudo mysqldump -u root -p bamikdb > backupdb.sql
-Enter password: 
-voloshchuk@s1-voloshchuk:~$ ls
-backupdb.sql
 
 mysql> DROP TABLE cars;
 Query OK, 0 rows affected (2.26 sec)
