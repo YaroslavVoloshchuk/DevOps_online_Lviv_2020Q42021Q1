@@ -49,3 +49,7 @@ SELECT with table:
 Step 8. Created snapshot RDS:
 
 ![](images/scr10.png)
+
+Step 9. Created an Amazon DynamoDB table:
+
+![](images/scr11.png)
