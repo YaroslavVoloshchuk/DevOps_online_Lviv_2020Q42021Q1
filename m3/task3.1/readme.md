@@ -37,3 +37,8 @@ voloshchuk@s1-voloshchuk:~$ sudo mysql -u root -p bamikdb < backupdb.sql
 
 Step 7. Transfered my local DB to RDS AWS:
 
+mysql -h bamikdb.cvnmlmyvdtuz.eu-central-1.rds.amazonaws.com -P 3306 -u admin -p bamikdb < backupdb.sql
+
+
+![](images/scr8.png)
+
