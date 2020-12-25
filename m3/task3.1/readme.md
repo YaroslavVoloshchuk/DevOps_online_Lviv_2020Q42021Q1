@@ -12,3 +12,7 @@ Step 3. Created database (bamikdb), created tables (classes, cars and owners)  a
 ![](images/scr2.png)
 
 Step 4. Executes SELECT operator with WHERE, GROUP BY and ORDER BY:
+
+![](images/scr3.png)
+
+![](images/scr4.png)
