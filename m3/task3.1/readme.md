@@ -11,8 +11,17 @@ Step 3. Created database (bamikdb), created tables (classes, cars and owners)  a
 
 ![](images/scr2.png)
 
-Step 4. Executes SELECT operator with WHERE, GROUP BY and ORDER BY:
+Step 4.Some queries:
+
+![](images/scr5.png)
 
 ![](images/scr3.png)
 
 ![](images/scr4.png)
+
+Step 5. Created a new user with different privileges and connected to db. Made a selection from db.
+
+[](images/scr6.png)
+
+
+Step 6. Made backup my database:
