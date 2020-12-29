@@ -60,4 +60,4 @@ Ping from  second subnetwork to first subnetwork (PC5 192.168.1.2 -> PC2 192.168
 ![](images/scr12.png)
 
 
-
+So, after analyzing different network topologies, we learned that a router is an electronic device used to connect two or more networks and controls the routing process, which based on information about the network topology and certain rules decides to send packets at the network layer (level 3 model OSI) between different network segments. Routers work at the network level of the OSI model: they can send packets from one network to another. In order to send packets in the desired direction, the router uses a routing table, which is stored in its memory. The routing table can be composed by means of static or dynamic routing.
