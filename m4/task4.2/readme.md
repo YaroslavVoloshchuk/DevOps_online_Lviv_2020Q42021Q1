@@ -2,7 +2,7 @@ TASK 4.2
 
 4.2.1 Topology of the corporate network, which includes two buildings with 2 floors in each. The horizontal subsystem of the floor has one group of 5 computers
 
-[](images/scr1.png)
+![](images/scr1.png)
 
 First building, first floor:
 
@@ -42,12 +42,12 @@ Gateway 192.168.3.10
 
 Static routes on Router0 and Router1:
 
-[](images/scr2.png)
-[](images/scr3.png)
+![](images/scr2.png)
+![](images/scr3.png)
 
 Ping between two buildings:
 
-[](images/scr4.png)
-[](images/scr5.png)
+![](images/scr4.png)
+![](images/scr5.png)
 
 The network is working.
