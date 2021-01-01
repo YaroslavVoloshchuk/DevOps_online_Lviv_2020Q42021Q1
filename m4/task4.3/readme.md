@@ -14,7 +14,6 @@ PC4 - 192.168.0.4
 PC5 - 192.168.0.5
 Server0 - 192.168.0.6
 Server1 - 192.168.1.1
-Default gateway - 192.168.0.100
 
 ![](images/scr2.png)
 
