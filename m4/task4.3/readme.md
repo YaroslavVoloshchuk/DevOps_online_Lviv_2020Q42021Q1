@@ -1,6 +1,6 @@
 Task 4.3
 
-Build a local network (one switch, 5 pc and server). Switch is connected to the router and the server is  connected to a router:
+Build a local network (one switch, 5 pc and server). Switch is connected to the router and the server is  connected to the router:
 
 ![](images/scr1.png) 
 
@@ -13,9 +13,12 @@ PC3 - 192.168.0.3
 PC4 - 192.168.0.4
 PC5 - 192.168.0.5
 Server0 - 192.168.0.6
+Server1 - 192.168.1.1
 Default gateway - 192.168.0.100
 
 ![](images/scr2.png)
+
+![](images/scr8.png)
 
 Then configured the router(CLI):
 
