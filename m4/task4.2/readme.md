@@ -140,7 +140,7 @@ VLAN30 - third building, 192.168.30.0
 VLAN20 - fourth building, 192.168.40.0
 VLAN20 - fivth building, 192.168.50.0
 
-Step 2:Сonfigured the router:
+Step 2: Сonfigured the router:
 
 ```
 Router#ena
@@ -161,4 +161,90 @@ Router(config-subif)#enc
 Router(config-subif)#encapsulation dot1Q 10
 Router(config-subif)#ip address 192.168.10.1 255.255.255.0
 Router(config-subif)#ex
+Router(config)#int fa0/0.20
+Router(config-subif)#
+%LINK-5-CHANGED: Interface FastEthernet0/0.20, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0.20, changed state to up
+
+Router(config-subif)#encapsulation dot1Q 20
+Router(config-subif)#ip address 192.168.20.1 255.255.255.0
+Router(config-subif)#ex
+Router(config)#int fa0/0.30
+Router(config-subif)#
+%LINK-5-CHANGED: Interface FastEthernet0/0.30, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0.30, changed state to up
+
+Router(config-subif)#encapsulation dot1Q 30
+Router(config-subif)#ip address 192.168.30.1 255.255.255.0
+Router(config-subif)#ex
+Router(config)#int fa0/0.40
+Router(config-subif)#
+%LINK-5-CHANGED: Interface FastEthernet0/0.40, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0.40, changed state to up
+
+Router(config-subif)#encapsulation dot1Q 40
+Router(config-subif)#ip address 192.168.0.1 255.255.255.0
+Router(config-subif)#ip address 192.168.40.1 255.255.255.0
+Router(config-subif)#ex
+Router(config)#int fa0/0.50
+Router(config-subif)#
+%LINK-5-CHANGED: Interface FastEthernet0/0.50, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0.50, changed state to up
+
+Router(config-subif)#encapsulation dot1Q 50
+Router(config-subif)#ip address 192.168.50.1 255.255.255.0
+Router(config-subif)#ex
 ```
+![](images/scr11.png)
+
+Then configured DHCP router:
+
+```
+Router(config)#ip dhcp pool 10
+Router(dhcp-config)#defa
+% Incomplete command.
+Router(dhcp-config)#def
+Router(dhcp-config)#default-router 192.168.10.1
+Router(dhcp-config)#network 192.168.10.0 255.255.255.0
+Router(dhcp-config)#ex
+Router(config)#ip dhcp pool 20
+Router(dhcp-config)#default-router 192.168.20.1
+Router(dhcp-config)#network 192.168.20.0 255.255.255.0
+Router(dhcp-config)#ex
+Router(config)#ip dhcp pool 30
+Router(dhcp-config)#default-router 192.168.30.1
+Router(dhcp-config)#network 192.168.30.0 255.255.255.0
+Router(dhcp-config)#ex
+Router(config)#ip dhcp pool 40
+Router(dhcp-config)#default-router 192.168.40.1
+Router(dhcp-config)#network 192.168.40.0 255.255.255.0
+Router(dhcp-config)#ex
+Router(config)#ip dhcp pool 50
+Router(dhcp-config)#default-router 192.168.50.1
+Router(dhcp-config)#network 192.168.50.0 255.255.255.0
+Router(dhcp-config)#ex
+Router(config)#ex
+```
+![](images/scr12.png)
+
+Then configured IP each PC (DHCP):
+
+![](images/scr13.png)
+
+
+Test the network:
+
+![](images/scr14.png)
+![](images/scr15.png)
+
+Some ping:
+
+From PC9 (second buiding, 192.168.20.5) to PC25 (fivth building, 192.168.50.3) and PC19 (fourth building, 192.168.40.3)
+
+![](images/scr16.png)
+
+The network is working.
