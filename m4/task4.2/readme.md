@@ -125,3 +125,40 @@ From PC2 (192.168.1.3) - first floor to PC31 (192.168.7.4) - fourth floor and PC
 ![](images/scr9.png)
 
 The network is working.
+
+
+TASK 4.2.3
+
+Corporate network of five one-storey buildings. One building - one working group of 6 computers. The network is based on a router with one port
+
+![](images/scr10.png)
+
+Step 1: create vlan 10,20,30,40,50 on each switch. Between the switches trunk mode, between pc and switch access mode.
+VLAN10 - fisrt building, 192.168.10.0
+VLAN20 - second building, 192.168.20.0
+VLAN30 - third building, 192.168.30.0
+VLAN20 - fourth building, 192.168.40.0
+VLAN20 - fivth building, 192.168.50.0
+
+Step 2:Сonfigured the router:
+
+```
+Router#ena
+Router#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#int fa0/0
+Router(config-if)#no sh
+Router(config-if)#int fa0/0.10
+Router(config-subif)#
+%LINK-5-CHANGED: Interface FastEthernet0/0.10, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0.10, changed state to up
+
+Router(config-subif)#enc
+% Incomplete command.
+Router(config-subif)#
+Router(config-subif)#enc
+Router(config-subif)#encapsulation dot1Q 10
+Router(config-subif)#ip address 192.168.10.1 255.255.255.0
+Router(config-subif)#ex
+```
