@@ -47,6 +47,8 @@ Static routes on Router0 and Router1:
 
 Ping between two buildings:
 
+![](images/scr5.png)
+
 
 The network is working.
 
