@@ -84,17 +84,17 @@ Some examples of absolute path:
 
 Relative path is defined as path related to the present working directory(pwd). Suppose I am located in /home/voloshchuk and I want to change directory to /home/voloshchuk/labs. I can use relative path concept to change directory to labs.
 
-`$ pwd
+`$ pwd`
 
-/home/voloshchuk
+`/home/voloshchuk`
 
-$cd labs/
+`$cd labs/`
 
-$pwd
+`$pwd`
 
-/home/voloshchuk/labs`
+`/home/voloshchuk/labs`
 
 
-Navigate to the Home Directory is to use command `cd` with the tilde (~) character, as shown below:
+Navigate to the home directory from anywhere in the filesystem is to use command `cd` with the tilde (~) character, as shown below:
 
 `cd ~`
