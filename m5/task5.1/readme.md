@@ -1,14 +1,14 @@
 TASK 5.1 Part 1.
 
-Connected via ssh to UbuntuServer (VM on VirtualBox) from Ubuntu Desktop (main host) and login to the system as root:
+1. Connected via ssh to UbuntuServer (VM on VirtualBox) from Ubuntu Desktop (main host) and login to the system as root:
 
 ![](images/scr1.png)
 
-Executed the command `info passwd` and examined the basic parameters of the command and changed the password. System file /etc/shadow has changed.
+2. Executed the command `info passwd` and examined the basic parameters of the command and changed the password. System file /etc/shadow has changed.
 
 ![](images/scr2.png)
 
-Users registered in the system:
+3. Users registered in the system:
 
 `cat /etc/passwd`
 
@@ -30,32 +30,32 @@ List Connected Users (command `w` or `who`):
  
 ![](images/scr4.png)
 
-Changed personal information (`chfn`):
+4. Changed personal information (`chfn`):
 
 ![](images/scr5.png)
 
-Then I read the Linux help system (command `man man` and `man info`) Example: `man passwd`
+5. Then I read the Linux help system (command `man man` and `man info`) Example: `man passwd`
 
 Example of a command with two keys: `passwd -S -a`
 
 ![](images/scr6.png)
 
-Then I read about `more` and `less` commands using the help system. Search .bash* files in the home directory (`ls -la`) View the content of files .bash:
+6. Then I read about `more` and `less` commands using the help system. Search .bash* files in the home directory (`ls -la`) View the content of files .bash:
 
 `less .bashrc`
 
 ![](images/scr7.png)
 
-Then I installed Finger - command is a user information lookup command which gives details of all the users logged in. (`sudo apt install finger`) and read the documentation for the finger command and created file `.plan`.  Example: `finger voloshchuk`
+7. Then I installed Finger - command is a user information lookup command which gives details of all the users logged in. (`sudo apt install finger`) and read the documentation for the finger command and created file `.plan`.  Example: `finger voloshchuk`
 
-And list the contents of the home directory using the ls command (`ls -la`)
+8. And list the contents of the home directory using the ls command (`ls -la`)
 
 ![](images/scr8.png)
 
 
 TASK5.1 Part 2
 
-Installed tree (`sudo apt install tree`)
+1. Installed tree (`sudo apt install tree`)
 
 Then display all files that contain a character `c` in the directory /var/log
 
@@ -69,13 +69,13 @@ Display all files that contain  `traceroute` in `/` – The Root Directory.
 
 ![](images/scr10.png)
 
-To determine the file type of a file passed the name of a file to the `file` command. The file name along with the file type will be printed to standard output.
+2. To determine the file type of a file passed the name of a file to the `file` command. The file name along with the file type will be printed to standard output.
 
 `file *` in the directory /var/log:
 
 ![](images/scr11.png)
 
-An absolute path is defined as the specifying the location of a file or directory from the root directory(/). In other words we can say absolute path is a complete path from start of actual filesystem from / directory.
+3. An absolute path is defined as the specifying the location of a file or directory from the root directory(/). In other words we can say absolute path is a complete path from start of actual filesystem from / directory.
 Some examples of absolute path:
 
 `/var/log/kernel`
@@ -99,10 +99,27 @@ Navigate to the home directory from anywhere in the filesystem is to use command
 
 `cd ~`
 
-I got acquainted with various parameters of the `ls` command
+4. I got acquainted with various parameters of the `ls` command
 
 `ls -l` - list files in long format. Here, `ls -l` shows file or directory, size, modified date and time, file or folder name and owner of file and its permission.
 
 `ls -la` - list files in long format including hidden files
 
 ![](images/scr12.png)
+
+5. Performed the following sequence of operations:
+
+Created a subdirectory in the home directory
+
+`mkdir labs`
+
+Create a file containing information about directories
+located in the root directory (using I/O redirection operations)
+
+`ls -la / > inforootdir`
+
+View the created file:
+
+`cat inforootdir`
+
+![](images/scr13.png)
