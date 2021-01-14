@@ -59,7 +59,8 @@ Installed tree (`sudo apt install tree`)
 
 Then display all files that contain a character `c` in the directory /var/log
 
-`tree -P 'c*''
+`tree -P '*c*'`
 
 ![](images/scr9.png)
+
 
