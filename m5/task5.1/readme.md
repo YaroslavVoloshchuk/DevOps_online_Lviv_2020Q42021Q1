@@ -54,3 +54,12 @@ And list the contents of the home directory using the ls command (`ls -la`)
 
 
 TASK5.1 Part 2
+
+Installed tree (`sudo apt install tree`)
+
+Then display all files that contain a character `c` in the directory /var/log
+
+`tree -P 'c*''
+
+![](images/scr9.png)
+
