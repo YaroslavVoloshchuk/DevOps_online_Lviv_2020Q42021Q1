@@ -59,12 +59,19 @@ Installed tree (`sudo apt install tree`)
 
 Then display all files that contain a character `c` in the directory /var/log
 
-`tree -P '*c*'`
+`tree --prune --matchdirs -aP '*c*'`
 
 ![](images/scr9.png)
 
-Display all files that contain a character `traceroute` in `/` – The Root Directory.
+Display all files that contain  `traceroute` in `/` – The Root Directory.
 
-`tree --prune -P '*traceroute*'`
+`tree --prune --matchdirs -aP '*traceroute*'`
 
 ![](images/scr10.png)
+
+To determine the file type of a file passed the name of a file to the `file` command. The file name along with the file type will be printed to standard output.
+
+`file *` in the directory /var/log:
+
+![](images/scr11.png)
+
