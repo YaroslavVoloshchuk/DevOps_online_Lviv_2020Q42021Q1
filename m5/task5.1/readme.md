@@ -98,3 +98,11 @@ Relative path is defined as path related to the present working directory(pwd). 
 Navigate to the home directory from anywhere in the filesystem is to use command `cd` with the tilde (~) character, as shown below:
 
 `cd ~`
+
+I got acquainted with various parameters of the `ls` command
+
+`ls -l` - list files in long format. Here, `ls -l` shows file or directory, size, modified date and time, file or folder name and owner of file and its permission.
+
+`ls -la` - list files in long format including hidden files
+
+![](images/scr12.png)
