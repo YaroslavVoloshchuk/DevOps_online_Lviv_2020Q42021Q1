@@ -40,9 +40,7 @@ Example of a command with two keys: `passwd -S -a`
 
 ![](images/scr6.png)
 
-Then I read about `more` and `less` commands using the help system. View the content of files .bash:
-
-`ls -la`
+Then I read about `more` and `less` commands using the help system. Search .bash* files in the home directory (`ls -la`) View the content of files .bash:
 
 `less .bashrc`
 
@@ -50,7 +48,9 @@ Then I read about `more` and `less` commands using the help system. View the con
 
 Then I installed Finger - command is a user information lookup command which gives details of all the users logged in. (`sudo apt install finger`) and read the documentation for the finger command. Example: `finger voloshchuk`
 
-And list the contents of the home directory using the ls command ('ls -la`)
+And list the contents of the home directory using the ls command (`ls -la`)
 
 ![](images/scr8.png)
 
+
+TASK5.1 Part 2
