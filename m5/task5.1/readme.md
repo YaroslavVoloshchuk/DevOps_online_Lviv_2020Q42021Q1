@@ -46,7 +46,7 @@ Then I read about `more` and `less` commands using the help system. Search .bash
 
 ![](images/scr7.png)
 
-Then I installed Finger - command is a user information lookup command which gives details of all the users logged in. (`sudo apt install finger`) and read the documentation for the finger command. Example: `finger voloshchuk`
+Then I installed Finger - command is a user information lookup command which gives details of all the users logged in. (`sudo apt install finger`) and read the documentation for the finger command and created file `.plan`.  Example: `finger voloshchuk`
 
 And list the contents of the home directory using the ls command (`ls -la`)
 
