@@ -123,3 +123,19 @@ View the created file:
 `cat inforootdir`
 
 ![](images/scr13.png)
+
+Copy the created file to your home directory using relative and absolute addressing:
+
+`cp inforootdir /home/voloshchuk/inforootdir` - absolute addressing;
+
+`cp inforootdir ~/inforootdir` - relative addressing.
+
+Delete the previously created subdirectory with the file: 
+
+`rm -r labs`
+
+Delete the file copied to the home directory:
+
+`rm inforootdir`
+
+![](images/scr14.png)
