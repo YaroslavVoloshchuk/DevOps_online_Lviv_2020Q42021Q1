@@ -78,15 +78,20 @@ To determine the file type of a file passed the name of a file to the `file` com
 An absolute path is defined as the specifying the location of a file or directory from the root directory(/). In other words we can say absolute path is a complete path from start of actual filesystem from / directory.
 Some examples of absolute path:
 
-`/var/log/kernel'
+`/var/log/kernel`
+
 `/boot/grub/grub.cfg`
 
 Relative path is defined as path related to the present working directory(pwd). Suppose I am located in /home/voloshchuk and I want to change directory to /home/voloshchuk/labs. I can use relative path concept to change directory to labs.
 
 `$ pwd
+
 /home/voloshchuk
-$cd labs/`  (using relative path)
-`$pwd
+
+$cd labs/
+
+$pwd
+
 /home/voloshchuk/labs
 `
 Navigate to the Home Directory is to use command `cd` with the tilde (~) character, as shown below:
