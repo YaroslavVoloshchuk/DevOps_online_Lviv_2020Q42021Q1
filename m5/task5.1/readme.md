@@ -63,4 +63,8 @@ Then display all files that contain a character `c` in the directory /var/log
 
 ![](images/scr9.png)
 
+Display all files that contain a character `traceroute` in `/` – The Root Directory.
 
+`tree --prune -P '*traceroute*'`
+
+![](images/scr10.png)
