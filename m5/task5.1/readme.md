@@ -92,8 +92,9 @@ $cd labs/
 
 $pwd
 
-/home/voloshchuk/labs
-`
+/home/voloshchuk/labs`
+
+
 Navigate to the Home Directory is to use command `cd` with the tilde (~) character, as shown below:
 
 `cd ~`
