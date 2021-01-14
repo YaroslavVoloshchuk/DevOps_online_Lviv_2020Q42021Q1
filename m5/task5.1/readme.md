@@ -43,6 +43,7 @@ Example of a command with two keys: `passwd -S -a`
 Then I read about `more` and `less` commands using the help system. View the content of files .bash:
 
 `ls -la`
+
 `less .bashrc`
 
 ![](images/scr7.png)
