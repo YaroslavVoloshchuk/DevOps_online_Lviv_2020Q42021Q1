@@ -130,7 +130,7 @@ Copy the created file to your home directory using relative and absolute address
 
 `cp inforootdir ~/inforootdir` - relative addressing.
 
-Delete the previously created subdirectory with the file: 
+Deleted the previously created subdirectory with the file: 
 
 `rm -r labs`
 
@@ -139,3 +139,29 @@ Delete the file copied to the home directory:
 `rm inforootdir`
 
 ![](images/scr14.png)
+
+6. Created subdirectory `test` in the home directory:
+
+`mkdir test`
+
+Copied the `.bash_history` file to `test` directory while changing its name to `labwork2`
+
+`cp .bash_history ~/test/labwork2`
+
+Created a hard and soft link to the `labwork2` file in `test` directory:
+
+`ln labwork2 hardlink`
+
+`ln -s labwork2 softlink`
+
+![](images/scr16.png)
+
+A symbolic or soft link is an actual link to the original file, whereas a hard link is a mirror copy of the original file. If you delete the original file, the soft link has no value, because it points to a non-existent file. But in the case of hard link, it is entirely opposite. Even if you delete the original file, the hard link will still has the data of the original file. Because hard link acts as a mirror copy of the original file.
+
+Changed the data a symbolic link:
+
+`echo "another line" >> softlink`
+
+![](images/scr15.png)
+
+
