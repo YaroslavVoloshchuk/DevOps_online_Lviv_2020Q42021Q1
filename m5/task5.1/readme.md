@@ -164,4 +164,4 @@ Changed the data a symbolic link:
 
 ![](images/scr15.png)
 
-
+As a result of changes to the symlink, the size of the original file and the hardlink changed, but the size of the symlink did not change. Becouse a symlink is an actual link to the original file.
