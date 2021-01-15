@@ -185,3 +185,13 @@ As a result of deleting the original file, the symlink wasn't working, because i
 `cat: symb_lnk_labwork2: No such file or directory`
 
 But hard_lnk_labwork2 works because the hard link is a copy of the original file.
+
+7. Using the locate utility, finded all files that contain the `squid` and `traceroute` sequence:
+
+`sudo apt install mlocate`
+
+`sudo updatedb`
+
+![](images/scr18.png)
+
+
