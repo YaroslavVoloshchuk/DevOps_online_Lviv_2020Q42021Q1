@@ -164,4 +164,24 @@ Changed the data a symbolic link:
 
 ![](images/scr15.png)
 
-As a result of changes to the symlink, the size of the original file and the hardlink changed, but the size of the symlink did not change. Becouse a symlink is an actual link to the original file.
+As a result of changes to the symlink, the size of the original file and the hardlink changed, but the size of the symlink did not change. Because a symlink is an actual link to the original file.
+
+Rename the hard link file to hard_lnk_labwork2:
+
+`mv hardlink hard_lnk_labwork2`
+
+Rename the soft link file to symb_lnk_labwork2:
+
+`mv softlink symb_lnk_labwork2`
+
+Then deleted the `labwork2` file:
+
+`rm labwork2`
+
+![](images/scr17.png)
+
+As a result of deleting the original file, the symlink wasn't working, because it is actually a link to the file.
+
+`cat: symb_lnk_labwork2: No such file or directory`
+
+But hard_lnk_labwork2 works because the hard link is a copy of the original file.
