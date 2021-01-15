@@ -199,7 +199,7 @@ But hard_lnk_labwork2 works because the hard link is a copy of the original file
 ![](images/scr18.png)
 
 
-8. Determined which partitions are mounted in the system, as well as the types of these partitions.
+8. Determined which partitions are mounted in the system, as well as the types of these partitions:
 
 `lsblk`
 
@@ -207,3 +207,9 @@ But hard_lnk_labwork2 works because the hard link is a copy of the original file
 
 ![](images/scr19.png)
  
+9. Counted the number of lines containing a given sequence of characters in a given file:
+
+`grep 'ls' hard_lnk_labwork2 | wc -l`
+
+![](images/scr20.png)
+
