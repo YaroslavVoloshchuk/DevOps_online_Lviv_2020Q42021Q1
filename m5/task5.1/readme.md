@@ -213,3 +213,8 @@ But hard_lnk_labwork2 works because the hard link is a copy of the original file
 
 ![](images/scr20.png)
 
+10. Using the `find` command, finded all files in the `/etc` directory containing the `host` character sequence.
+
+`find /etc -iname "*host*"`
+
+![](images/scr21.png)
