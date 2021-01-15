@@ -192,6 +192,18 @@ But hard_lnk_labwork2 works because the hard link is a copy of the original file
 
 `sudo updatedb`
 
+`locate  "*squid*" "*traceroute*"`
+
+`locate -c "*squid*" "*traceroute*"`
+
 ![](images/scr18.png)
 
 
+8. Determined which partitions are mounted in the system, as well as the types of these partitions.
+
+`lsblk`
+
+`lsblk -o +FSTYPE`
+
+![](images/scr19.png)
+ 
