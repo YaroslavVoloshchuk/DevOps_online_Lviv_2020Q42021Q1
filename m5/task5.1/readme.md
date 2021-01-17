@@ -218,3 +218,42 @@ But hard_lnk_labwork2 works because the hard link is a copy of the original file
 `find /etc -iname "*host*"`
 
 ![](images/scr21.png)
+
+11. Listed all objects in `/etc` that contain the `ss` character sequence and duplicated a similar command using a bunch of grep:
+
+`ls -la /etc | grepp ss`
+
+![](images/scr22.png)
+
+12. Organized a screen-by-screen print of the contents of the /etc directory:
+
+`ls -la /etc | head -n5`
+
+ ![](images/scr23.png)
+
+13. What are the types of devices and how to determined the type of device?
+
+
+In Linux various special files can be found under the directory /dev. These files are called device files and behave unlike ordinary files. The most common types of device files are for block devices and character devices. These files are an interface to the actual driver (part of the Linux kernel) which in turn accesses the hardware. Another, less common, type of device file is the named pipe. 
+
+`ls -l /dev`
+
+![](images/scr24.png)
+
+The columns are as follows from left to right:
+
+    Permissions
+    Owner
+    Group
+    Major Device Number
+    Minor Device Number
+    Timestamp
+    Device Name
+
+Remember in the ls command you can see the type of file with the first bit on each line. Device files are denoted as the following:
+
+    c - character
+    b - block
+    p - pipe
+    s - socket
+
