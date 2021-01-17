@@ -231,7 +231,7 @@ But hard_lnk_labwork2 works because the hard link is a copy of the original file
 
  ![](images/scr23.png)
 
-13. What are the types of devices and how to determined the type of device?
+13. Determine the type of device, what are the types of devices:
 
 
 In Linux various special files can be found under the directory /dev. These files are called device files and behave unlike ordinary files. The most common types of device files are for block devices and character devices. These files are an interface to the actual driver (part of the Linux kernel) which in turn accesses the hardware. Another, less common, type of device file is the named pipe. 
@@ -256,4 +256,33 @@ Remember in the ls command you can see the type of file with the first bit on ea
     b - block
     p - pipe
     s - socket
+
+lspci - list all PCI devices 
+
+`lspci`
+
+![](images/scr25.png)
+
+14. Determined the type of file in the system, what types of files are there.
+
+`ls -l`
+
+![](images/scr26.png)
+
+`ls` command will show the file type as an encoded symbol found as the first character of the file permission part. In this case it is `-`, which means "regular file". It is important to point out that Linux file types are not to be mistaken with file extensions. Let us have a look at a short summary of all the seven different types of Linux file types and ls command identifiers:
+
+
+   `-` - regular file
+   `d` - directory
+   `c` - character device file
+   `b` - block device file
+   `s` - local socket file
+   `p` - named pipe
+   `l` - symbolic link
+
+15. Listed the first 5 directory files that were recently accessed in the `/etc` directory:
+
+`ls -l /etc | head -n6`
+
+![](images/scr27.png)
 
