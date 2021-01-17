@@ -227,7 +227,7 @@ But hard_lnk_labwork2 works because the hard link is a copy of the original file
 
 12. Organized a screen-by-screen print of the contents of the /etc directory:
 
-`ls -la /etc | head -n5`
+`ls -la /etc | less > dev/pts/0`
 
  ![](images/scr23.png)
 
@@ -257,9 +257,7 @@ Remember in the ls command you can see the type of file with the first bit on ea
     p - pipe
     s - socket
 
-lspci - list all PCI devices 
-
-`lspci`
+`lspci` - list all PCI devices 
 
 ![](images/scr25.png)
 
@@ -269,16 +267,16 @@ lspci - list all PCI devices
 
 ![](images/scr26.png)
 
-`ls` command will show the file type as an encoded symbol found as the first character of the file permission part. In this case it is `-`, which means "regular file". It is important to point out that Linux file types are not to be mistaken with file extensions. Let us have a look at a short summary of all the seven different types of Linux file types and ls command identifiers:
+`ls` command will show the file type as an encoded symbol found as the first character of the file permission part. In this case it is `"-"`, which means "regular file". It is important to point out that Linux file types are not to be mistaken with file extensions. Let us have a look at a short summary of all the seven different types of Linux file types and ls command identifiers:
 
 
-   `-` - regular file
-   `d` - directory
-   `c` - character device file
-   `b` - block device file
-   `s` - local socket file
-   `p` - named pipe
-   `l` - symbolic link
+   `-` - regular file;
+   `d` - directory;
+   `c` - character device file;
+   `b` - block device file;
+   `s` - local socket file;
+   `p` - named pipe;
+   `l` - symbolic link.
 
 15. Listed the first 5 directory files that were recently accessed in the `/etc` directory:
 
