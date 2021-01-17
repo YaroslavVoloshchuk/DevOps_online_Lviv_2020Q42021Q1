@@ -269,13 +269,18 @@ Remember in the ls command you can see the type of file with the first bit on ea
 
 `ls` command will show the file type as an encoded symbol found as the first character of the file permission part. In this case it is `"-"`, which means "regular file". It is important to point out that Linux file types are not to be mistaken with file extensions. Let us have a look at a short summary of all the seven different types of Linux file types and ls command identifiers:
 
-
    `-` - regular file;
+
    `d` - directory;
+
    `c` - character device file;
+
    `b` - block device file;
+
    `s` - local socket file;
+
    `p` - named pipe;
+
    `l` - symbolic link.
 
 15. Listed the first 5 directory files that were recently accessed in the `/etc` directory:
