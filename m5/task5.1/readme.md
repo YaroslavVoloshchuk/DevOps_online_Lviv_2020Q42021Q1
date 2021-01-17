@@ -284,3 +284,4 @@ Remember in the ls command you can see the type of file with the first bit on ea
 
 ![](images/scr27.png)
 
+Hooray. Task 5.1 done.
