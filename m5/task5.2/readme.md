@@ -183,3 +183,13 @@ Every file and directory in Linux system has following 3 permissions defined for
 
 ![](images/scr16.png)
 
+For example, file readme.md has next permissions:
+
+![](images/scr17.png)
+
+-rw-rw-r--
+
+Owner - read and write
+Group - read and write
+Others - read only.
+
