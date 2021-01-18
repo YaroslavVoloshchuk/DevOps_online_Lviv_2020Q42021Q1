@@ -263,7 +263,7 @@ If you want to specify a different value on per-user basis edit the user’s she
 
 For example, to calculate how umask 022 will affect newly created files and directories, use:
 
-    Files: 666 - 022 = 644. The owner can read and modify the files. Group and others can only read the files.
-    Directories: 777 - 022 = 755.The owner can cd into the directory and list read, modify, create or delete the files in the directory. Group and others can cd into the directory and list and read the files.
+    Files: 666 - 022 = 644. 
+    Directories: 777 - 022 = 755.
 
 ![](images/scr20.png)
