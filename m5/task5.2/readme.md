@@ -62,3 +62,42 @@ The third field represents the GID. New groups are usually assigned GIDs startin
 `id username` or `cat /etc/group | grep username`
 
 ![](images/scr4.png)
+
+
+5. What are the commands for adding a user to the system? What are the basic parameters required to create a user?
+
+To add/create a new user, all you've to follow the command `useradd` or `adduser` with 'username'. 
+
+![](images/scr8.png)
+
+`useradd` is a low-level utility for adding users to a system.
+
+When we run `useradd` command in Linux terminal, it performs following major things:
+
+    It edits /etc/passwd, /etc/shadow, /etc/group and /etc/gshadow files for the newly created User account.
+    Creates and populate a home directory for the new user.
+    Sets permissions and ownerships to home directory.
+
+Basic parameters required to create a user:
+
+![](images/scr9.png)
+
+
+6. How do I change the name (account name) of an existing user?
+
+`usermod -l login-name old-name`
+
+![](images/scr10.png)
+
+
+7. What is skell_dir? What is its structure?
+
+Skel is derived from the skeleton because it contains basic structure of home directory.
+
+The /etc/skel directory contains files and directories that are automatically copied over to a new user’s when it is created from useradd command.
+
+This will ensure that all the users gets same intial settings and environment.
+
+`ls -la /etc/skel/`
+
+![](images/scr7.png)
