@@ -189,7 +189,52 @@ For example, file readme.md has next permissions:
 
 -rw-rw-r--
 
-Owner - read and write
-Group - read and write
+Owner - read and write.
+Group - read and write.
 Others - read only.
+
+
+14. What commands are used to change the owner of a file (directory), as well as the mode of access to the file? Give examples, demonstrate on the terminal.
+
+To change the mode of a file, use the `chmod` command. The general form is
+
+     ` chmod X@Y file1 file2 ...`
+
+where: X is any combination of the letters `u' (for owner), `g' (for group), `o' (for others), `a' (for all; that is, for `ugo'); @ is either `+' to add permissions, `-' to remove permissions, or `=' to assign permissions absolutely; and Y is any combination of `r', `w', `x'. Following are some examples:
+
+     chmod u=rx file        (Give the owner rx permissions, not w)
+     chmod go-rwx file      (Deny rwx permission for group, others)
+     chmod g+w file         (Give write permission to the group)
+     chmod a+x file1 file2  (Give execute permission to everybody)
+     chmod g+rx,o+x file    (OK to combine like this with a comma)
+
+Also we can to change permissions in numeric code in Linux, so to do this you use numbers instead of “r”, “w”, or “x”.
+
+
+    0 = No Permission
+    1 = Execute
+    2 = Write
+    4 = Read
+
+Basically, we add up the numbers depending on the level of permission you want to give.
+
+Permission numbers are:
+
+    0 = ---
+    1 = --x
+    2 = -w-
+    3 = -wx
+    4 = r-
+    5 = r-x
+    6 = rw-
+    7 = rwx
+
+For example create file `permission.txt` and  give it all permission `chmod a+x permission.txt`
+
+Then change permission to `-rw-r--r--` - `chmod 644 permission.txt`
+
+![](images/scr18.png)
+
+
+
 
