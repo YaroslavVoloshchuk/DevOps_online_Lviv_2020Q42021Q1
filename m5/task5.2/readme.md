@@ -267,3 +267,24 @@ For example, to calculate how umask 022 will affect newly created files and dire
     Directories: 777 - 022 = 755.
 
 ![](images/scr20.png)
+
+
+16. Give definitions of sticky bits and mechanism of identifier substitution. Give an example of files and directories with these attributes.
+
+The sticky bit was initially introduced to ‘stick’ an executable program’s text segment in the swap space even after the program has completed execution, to speed up the subsequent runs of the same program. However, these days the sticky bit means something entirely different.
+
+When a directory has the sticky bit set, its files can be deleted or renamed only by the file owner, directory owner and the root user. The command below shows how the sticky bit can be set.
+
+`chmod +t `
+
+Simply look for a ‘t’ character in the file permissions to locate the sticky bit. The snippet below shows how we can set the sticky bit for some directory “test”, and how it prevents the new user from deleting a file in the directory.
+
+![](images/scr21.png)
+
+![](images/scr22.png)
+
+To remove the sticky bit, simply use the following command.
+
+`chmod -t`
+
+Since deleting a file is controlled by the write permission of the file, practical uses of the sticky bit involve world-writable directories such as ‘/tmp’ so that the delete permissions are reserved only for the owners of the file. 
