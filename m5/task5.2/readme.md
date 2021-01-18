@@ -244,7 +244,26 @@ Permission numbers are:
     6 = rw-
     7 = rwx
 
-Fox example:
+For example:
 
 ![](images/scr19.png)
 
+On Linux all new files are created with a default set of permissions. The `umask` utility allows you to view or to set the file mode creation mask, which determines the permissions bits for newly created files or directories.
+
+It is used by `mkdir, touch, tee` and other commands that create new files and directories.
+
+
+By default, on Linux systems, the default creation permissions are 666 for files, which gives read and write permission to user, group, and others, and to 777 for directories, which means read, write and execute permission to user, group, and others. Linux does not allow a file to be created with execute permissions.
+
+The default creation permissions can be modified using the umask utility.
+
+umask affects only the current shell environment. On most Linux distributions the default system-wide umask value is set in the pam_umask.so or /etc/profile file.
+
+If you want to specify a different value on per-user basis edit the user’s shell configuration files such as ~/.bashrc or ~/.zshrc. You can also change the current session umask value by running umask followed by the desired value.
+
+For example, to calculate how umask 022 will affect newly created files and directories, use:
+
+    Files: 666 - 022 = 644. The owner can read and modify the files. Group and others can only read the files.
+    Directories: 777 - 022 = 755.The owner can cd into the directory and list read, modify, create or delete the files in the directory. Group and others can cd into the directory and list and read the files.
+
+![](images/scr20.png)
