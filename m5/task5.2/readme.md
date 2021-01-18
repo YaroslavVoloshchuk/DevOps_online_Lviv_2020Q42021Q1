@@ -158,3 +158,28 @@ To delete and change the password by user uses the command:
 
 ![](images/scr14.png)
 
+11. Display the extended format of information about the directory, tell about the information columns displayed on the terminal.
+
+`ls -la`
+
+![](images/scr15.png)
+
+As you can see in the illustration above, the output has 8 columns. And this is information about the contents of each of the columns:
+
+    The first column contains information about the access rights to the directory item
+    The second column contains the number of hard links to the directory item
+    The third and fourth columns contain the names of the user and user group that owns the directory entry
+    The fifth column contains the size of the directory item
+    The sixth and seventh columns contain the date and time the directory item was modified
+    The last, eighth column contains the name of the directory item
+
+12. What access rights exist and for whom (i. e., describe the main roles)? Briefly describe the acronym for access rights.
+
+For effective security, Linux divides authorization into 2 levels: Ownership and Permission
+
+Every file and directory on Linux system is assigned 3 types of owner: User, Group and Others
+
+Every file and directory in Linux system has following 3 permissions defined for all the 3 owners discussed above: Read, Write and Execute.
+
+![](images/scr16.png)
+
