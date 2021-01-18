@@ -194,6 +194,10 @@ Group - read and write.
 Others - read only.
 
 
+13. What is the sequence of defining the relationship between the file and the
+user?
+
+
 14. What commands are used to change the owner of a file (directory), as well as the mode of access to the file? Give examples, demonstrate on the terminal.
 
 To change the mode of a file, use the `chmod` command. The general form is
@@ -208,15 +212,26 @@ where: X is any combination of the letters `u' (for owner), `g' (for group), `o'
      chmod a+x file1 file2  (Give execute permission to everybody)
      chmod g+rx,o+x file    (OK to combine like this with a comma)
 
-Also we can to change permissions in numeric code in Linux, so to do this you use numbers instead of “r”, “w”, or “x”.
+For example create file `permission.txt` and  give it all permission `chmod a+x permission.txt`
+
+![](images/scr18.png)
 
 
-    0 = No Permission
-    1 = Execute
-    2 = Write
-    4 = Read
+15. What is an example of octal representation of access rights? Describe the umask command.
 
-Basically, we add up the numbers depending on the level of permission you want to give.
+We can use the octal notation to set permissions. To describe the octal notation, we can add permission values to obtain new, combined (octal) values.
+
+Permission values:
+
+0 = No Permission
+1 – able to execute (x)
+2 – able to write (w)
+4 – able to read (r)
+
+The octal number is the sum of the permission values, for example:
+
+3 (1+2) – able to execute and write
+6 (2+4) – able to write and read
 
 Permission numbers are:
 
@@ -229,12 +244,7 @@ Permission numbers are:
     6 = rw-
     7 = rwx
 
-For example create file `permission.txt` and  give it all permission `chmod a+x permission.txt`
+Fox example:
 
-Then change permission to `-rw-r--r--` - `chmod 644 permission.txt`
-
-![](images/scr18.png)
-
-
-
+![](images/scr19.png)
 
