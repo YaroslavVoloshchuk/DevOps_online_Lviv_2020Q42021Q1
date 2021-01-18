@@ -101,3 +101,53 @@ This will ensure that all the users gets same intial settings and environment.
 `ls -la /etc/skel/`
 
 ![](images/scr7.png)
+
+
+8. How to remove a user from the system (including his mailbox)?
+
+To delete a user via the command line:
+
+`# userdel username`
+
+To remove the user's home directory and mail spool:
+
+`# userdel -r username`
+
+![](images/scr11.png)
+
+
+9. What commands and keys should be used to lock and unlock a user account?
+
+Verify the status of a user with `passwd` command
+
+`passwd -S user_name`
+
+Look at the second field in the output. Here’s what it means:
+
+– P or PS: password is set (user is unlocked)
+– L or LK: User is locked
+– N or NP: No password is needed by the user
+
+To lock a user use the option -l or –lock in this manner:
+
+`passwd -l user_name`
+
+To unlock the  use the option -u or –unlock:
+
+`passwd -u user_name`
+
+![](images/scr12.png)
+
+We can also modify the state of a user by locking or unlocking with `usermod`.
+
+To lock the user, you can use the -L option in this manner:
+
+`usermod -L user_name`
+
+To unlock the user, you can use the -U option:
+
+`usermod -U user_name`
+
+10. How to remove a user's password and provide him with a password-free login for subsequent password change?
+
+
