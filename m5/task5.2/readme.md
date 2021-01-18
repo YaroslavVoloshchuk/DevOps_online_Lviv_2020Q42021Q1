@@ -150,4 +150,11 @@ To unlock the user, you can use the -U option:
 
 10. How to remove a user's password and provide him with a password-free login for subsequent password change?
 
+To delete and change the password by user uses the command:
+
+`passwd -d -e username`
+
+![](images/scr13.png)
+
+![](images/scr14.png)
 
