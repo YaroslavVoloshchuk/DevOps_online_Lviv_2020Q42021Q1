@@ -197,6 +197,28 @@ Others - read only.
 13. What is the sequence of defining the relationship between the file and the
 user?
 
+For example, take a file in the home directory `permission.txt`
+
+![](images/scr24.png)
+
+Let's analyze it.
+
+Access rights `-rw-r--r--` what means for Owner - read and write, for Group - read only and for Others - read only too.
+
+Then the number of hard links to file - 1.
+
+Names of the user and user group that owns - voloshchuk
+
+Size of the file: 4
+
+Date and time the file  was modified: Jan 18 13:07 
+
+And last column  contains the name of the file - permission.txt.
+
+Also,  we can view the access rights to the file with the command `stat`
+
+![](images/scr25.png)
+
 
 14. What commands are used to change the owner of a file (directory), as well as the mode of access to the file? Give examples, demonstrate on the terminal.
 
@@ -314,3 +336,4 @@ Options:
 -t, –timing[=]: This option allows user to capture the terminal activity step by step and appears like a video when the recorded file is executed with the help of scriptreplay command. 
 
 ![](images/scr23.png)
+
