@@ -203,7 +203,7 @@ For example, take a file in the home directory `permission.txt`
 
 Let's analyze it.
 
-Access rights `-rw-r--r--` what means for Owner - read and write, for Group - read only and for Others - read only too.
+Access rights `-rw-r--r--`  means for Owner - read and write, for Group - read only and for Others - read only too.
 
 Then the number of hard links to file - 1.
 
@@ -311,29 +311,13 @@ To remove the sticky bit, simply use the following command.
 
 Since deleting a file is controlled by the write permission of the file, practical uses of the sticky bit involve world-writable directories such as ‘/tmp’ so that the delete permissions are reserved only for the owners of the file. 
 
+![](images/scr26.png)
+
+
 17. What file attributes should be present in the command script?
 
-Script command in Linux is used to make typescript or record all the terminal activities.
-
-After executing the script command it starts recording everything printed on the screen including the inputs and outputs until exit. 
-
-`script my.log`
-
-Options:
-
--a, –append: This option is used when we want to append the output, retaining the prior content of the file. The multiple contents get separated by adding a line that states the date and time of the script started.
-
--c, –command: This option is used when we want to run a particular command rather than interactive shell and get terminal information in the file given as argument or typescript by default. The script will automatically exit after successful execution. 
-
--e, –return: This option simply return exit code of the child process.
-
--f, –flush: This option is used to run flush output after each write. It’s useful for telecooperation
-
-–force: This option allows default output file i.e. typescript to be hard or symbolic link. 
-
--q, –quiet: This option does not display the notification stating that the script has started and quietly execute and exit the script command. 
-
--t, –timing[=]: This option allows user to capture the terminal activity step by step and appears like a video when the recorded file is executed with the help of scriptreplay command. 
+To run the script, we need to have  an execution permission (for owner or UGO if the script is run by another user) 
 
 ![](images/scr23.png)
+
 
