@@ -93,3 +93,14 @@ Column STAT displayed to describe the state of a process:
 ![](images/scr6.png)
 
 9. What utilities can be used to analyze existing running tasks (by analyzing the help for the ps command)?
+
+`pgrep, pstree, top, proc`
+
+`pgrep` is a command-line utility that allows you to find the process IDs of a running program based on given criteria. It can be a full or partial process name, a user running the process, or other attributes.
+
+`top` command is used to show the Linux processes. It provides a dynamic real-time view of the running system. Usually, this command shows the summary information of the system and the list of processes or threads which are currently managed by the Linux Kernel.
+
+About `pstree` and `proc`  described above. 
+
+
+10. What information does top command display?
