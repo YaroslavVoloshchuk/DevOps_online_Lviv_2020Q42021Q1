@@ -67,6 +67,7 @@ Also, by default `pstree` without parameters shows only the tree of processes sp
 PROCESS STATE CODES 
 
 Column STAT displayed to describe the state of a process:
+
        D    uninterruptible sleep (usually IO)
        R    running or runnable (on run queue)
        S    interruptible sleep (waiting for an event to complete)
@@ -76,6 +77,7 @@ Column STAT displayed to describe the state of a process:
        Z    defunct ("zombie") process, terminated but not reaped by its parent.
 
        When the stat keyword is used, additional characters may be displayed:
+
        <    high-priority (not nice to other users)
        N    low-priority (nice to other users)
        L    has pages locked into memory (for real-time and custom IO)
