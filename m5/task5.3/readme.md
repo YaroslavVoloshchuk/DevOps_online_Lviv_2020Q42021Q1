@@ -83,3 +83,13 @@ Column STAT displayed to describe the state of a process:
        s    is a session leader
        l    is multi-threaded (using CLONE_THREAD, like NPTL pthreads do)
        +    is in the foreground process group.
+
+
+8. Display only the processes of a specific user.
+
+
+`ps -u username`
+
+![](images/scr6.png)
+
+9. What utilities can be used to analyze existing running tasks (by analyzing the help for the ps command)?
