@@ -64,7 +64,6 @@ Also, by default `pstree` without parameters shows only the tree of processes sp
 
 ![](images/scr5.png)
 
-PROCESS STATE CODES 
 
 Column STAT displayed to describe the state of a process:
 
