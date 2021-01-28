@@ -103,4 +103,18 @@ Column STAT displayed to describe the state of a process:
 About `pstree` and `proc`  described above. 
 
 
-10. What information does top command display?
+10. What information does `top` command display?
+
+`top` command displays processor activity of your Linux box and also displays tasks managed by kernel in real-time. It'll show processor and memory are being used and other information like running processes. This may help you to take correct action.
+
+11. Display the processes of the specific user using the top command.
+
+`top -u username` 
+
+For example:
+
+![](images/scr7.png)
+
+12. What interactive commands can be used to control the top command? Give a couple of examples.
+
+
