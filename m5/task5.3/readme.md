@@ -111,10 +111,32 @@ About `pstree` and `proc`  described above.
 
 `top -u username` 
 
-For example:
+For example: `top -u voloshchuk`
 
 ![](images/scr7.png)
 
 12. What interactive commands can be used to control the top command? Give a couple of examples.
+
+In running `top` command press: 
+
+`Shift + f` - to enter the interactive menu
+
+`Shift + p` - to sort processes as per CPU utilization
+
+`Shift + m` - to sort by memory usage
+    
+`Shift + n` - to sort by process ID
+
+`Shift + t` - to sort by the running time
+
+`c` - display absolute path of running process.
+
+`z` - display running process in color which may help you to identified running process easily
+
+For example switching to multi-window mode press `Shift + a`:
+
+![](images/scr8.png)
+ 
+13. Sort the contents of the processes window using various parameters (for example, the amount of processor time taken up, etc.)
 
 
