@@ -190,9 +190,16 @@ After you enter the PID, press enter. Now it will ask which signal you want to u
 ![](images/scr11.png)
 
 The most common kill signals are:
+
 1 - SIGHUP - Hangup
+
 2 - SIGINT - Interrupt from keyboard
+
 9 - SIGKILL - Kill signal
+
 15 - SIGTERM - Termination signal
+
 17, 19, 23 - SIGSTOP - Stop the process
 
+
+17. Commands jobs, fg, bg, nohup. What are they for? Use the sleep, yes command to demonstrate the process control mechanism with fg, bg.
