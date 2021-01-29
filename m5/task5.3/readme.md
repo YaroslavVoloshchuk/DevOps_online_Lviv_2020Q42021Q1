@@ -139,4 +139,20 @@ For example switching to multi-window mode press `Shift + a`:
  
 13. Sort the contents of the processes window using various parameters (for example, the amount of processor time taken up, etc.)
 
+The command line option -o (o standing for "Override-sort-field"):
+
+`top -O %CPU` - sorts by the column %CPU
+
+`top -O %MEM` - sorts by the column %MEM
+
+Also I can use VIRT, RES or SHR too. 
+
+
+14. Concept of priority, what commands are used to set priority?
+
+In Linux system priorities are 0 to 139 in which 0 to 99 for real-time and 100 to 139 for users. Nice value — Nice values are user-space values that we can use to control the priority of a process. The nice value range is -20 to +19 where -20 is highest, 0 default and +19 is lowest.
+
+Instead of launching the program with the default priority, you can use `nice command` to launch the process with a specific priority.
+
+You can change the scheduling priority of a running process to a value lower or higher than the base scheduling priority by using the `renice command` from the command line.
 
