@@ -156,3 +156,10 @@ Instead of launching the program with the default priority, you can use `nice co
 
 You can change the scheduling priority of a running process to a value lower or higher than the base scheduling priority by using the `renice command` from the command line.
 
+15. Can I change the priority of a process using the top command? If so, how?
+
+In running top command press `r` (use ‘r‘ option to change the priority of the process also called Renice.)
+
+![](images/scr9.png)
+
+Enter PID and renice to new value. Profit!
