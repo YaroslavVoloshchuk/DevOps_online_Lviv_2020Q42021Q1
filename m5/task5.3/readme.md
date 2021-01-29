@@ -156,6 +156,12 @@ Instead of launching the program with the default priority, you can use `nice co
 
 You can change the scheduling priority of a running process to a value lower or higher than the base scheduling priority by using the `renice command` from the command line.
 
+For example:
+
+`nice -n -5 bash`
+
+`renice value PID`
+
 15. Can I change the priority of a process using the top command? If so, how?
 
 In running top command press `r` (use ‘r‘ option to change the priority of the process also called Renice.)
@@ -163,3 +169,30 @@ In running top command press `r` (use ‘r‘ option to change the priority of t
 ![](images/scr9.png)
 
 Enter PID and renice to new value. Profit!
+
+
+16. Examine the kill command. How to send with the kill commandprocess control signal? Give an example of commonly used signals.
+
+`kill` command in Linux (located in /bin/kill), is a built-in command which is used to terminate processes manually. kill command sends a signal to a process which terminates the process. If the user doesn’t specify any signal which is to be sent along with kill command then default TERM signal is sent that terminates the process.
+
+`kill -l` - to display all the available signals you can use below command option
+
+![](images/scr10.png)
+
+The structure for this command would be:
+
+`kill SIGNAL PID` or `kill SIGNAL Process by name` For examlpe `kill -9 firefox`
+
+In running `top` command press `k`
+
+After you enter the PID, press enter. Now it will ask which signal you want to use to kill the process. If you want to use SIGTERM(15), then simply press enter as it is the default signal. If you want to use SIGKILL(9), then type 9 and press enter.
+
+![](images/scr11.png)
+
+The most common kill signals are:
+1 - SIGHUP - Hangup
+2 - SIGINT - Interrupt from keyboard
+9 - SIGKILL - Kill signal
+15 - SIGTERM - Termination signal
+17, 19, 23 - SIGSTOP - Stop the process
+
