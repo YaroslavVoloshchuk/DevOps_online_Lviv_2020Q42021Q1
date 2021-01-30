@@ -216,3 +216,18 @@ If you know when starting the process that you will want to close the terminal b
     bg: Resume suspended jobs by running them as background jobs
 
 
+![](images/scr12.png)
+
+
+Part 2
+
+
+1. Check the implementability of the most frequently used OPENSSH commands in the MS Windows operating system. (Description of the expected result of the commands + screenshots: command – result should be presented)
+
+Connect to Linux machine (192.168.0.101) using ssh:
+
+![](images/scr13.png)
+
+For example used command `scp`- copy file using ssh   
+
+![](images/scr14.png)
