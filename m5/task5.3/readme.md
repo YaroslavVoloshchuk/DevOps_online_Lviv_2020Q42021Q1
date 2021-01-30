@@ -312,5 +312,9 @@ SSH output: `sudo tcpdump -i enp1s0 port 22`
 
 ![](images/scr25.png)
 
+Telnet: `sudo tcpdump -i enp1s0 port 23`
+
+Rlogin: `sudo tcpdump -i enp1s0 port 513`
+
 
 
