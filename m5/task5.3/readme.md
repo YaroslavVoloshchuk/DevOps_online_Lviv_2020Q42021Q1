@@ -231,3 +231,12 @@ Connect to Linux machine (192.168.0.101) using ssh:
 For example used command `scp`- copy file using ssh   
 
 ![](images/scr14.png)
+
+Then I created a new key pair, sent the public key to the server and inserted the contents of the key into `authirized_keys` file. Thus it was possible to enter the server on ssh without confirmation of the password:
+
+![](images/scr15.png)
+ 
+Connect to Linux machine (192.168.0.101) without password:
+
+![](images/scr16.png)
+
