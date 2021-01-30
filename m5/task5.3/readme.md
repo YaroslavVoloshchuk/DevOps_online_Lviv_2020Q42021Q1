@@ -203,3 +203,16 @@ The most common kill signals are:
 
 
 17. Commands jobs, fg, bg, nohup. What are they for? Use the sleep, yes command to demonstrate the process control mechanism with fg, bg.
+
+
+The `fg` command switches a job running in the background into the foreground. The `bg` command restarts a suspended job, and runs it in the background. If no job number is specified, then the fg or bg command acts upon the currently running job.
+If you know when starting the process that you will want to close the terminal before the process completes, you can start it using the `nohup` command. 
+
+
+    Ctrl-C: Kill the process running in the foreground by sending the signal SIGINT
+    Ctrl-Z: Suspend the process running in the foreground by sending the signal SIGTSTP
+    jobs: Display a list of the jobs with their status
+    fg: Move a background job into the foreground
+    bg: Resume suspended jobs by running them as background jobs
+
+
