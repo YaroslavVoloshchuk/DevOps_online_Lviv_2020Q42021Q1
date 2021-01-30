@@ -306,4 +306,11 @@ Also in port forwarding instead of ip 127.0.0.1 we can specify real ip (192.168.
 
 5*. Intercept (capture) traffic (tcpdump, wireshark) while authorizing the remote client on the server using ssh, telnet, rlogin. Analyze the result.
 
+SSH output: `sudo tcpdump -i enp1s0 port 22`
+
+![](images/scr24.png)
+
+![](images/scr25.png)
+
+
 
