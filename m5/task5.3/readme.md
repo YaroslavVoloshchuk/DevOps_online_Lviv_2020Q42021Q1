@@ -246,9 +246,7 @@ We can configure file /etc/ssh/sshd_config
 
 1) Change standart port 22. If you use a different port, it adds a little bit of security through obscurity to your system.
 
-2) Reject Connection Requests With No Passwords. The default settings for SSH accept connection requests without passwords.  We can change that very easily, and ensure all connections are authenticated.
-
- `Permit Empty Passwords no`
+2) Reject Connection Requests With No Passwords. The default settings for SSH accept connection requests without passwords.  We can change that very easily, and ensure all connections are authenticated `PermitEmptyPasswords no`
 
 3) Use SSH Keys Instead of Passwords. Described above with snapshots.
 
