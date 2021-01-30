@@ -240,3 +240,20 @@ Connect to Linux machine (192.168.0.101) without password:
 
 ![](images/scr16.png)
 
+2. Implement basic SSH settings to increase the security of the client-server connection 
+
+We can configure file /etc/ssh/sshd_config  
+
+1) Change standart port 22. If you use a different port, it adds a little bit of security through obscurity to your system.
+
+2) Reject Connection Requests With No Passwords. The default settings for SSH accept connection requests without passwords.  We can change that very easily, and ensure all connections are authenticated.
+
+ `Permit Empty Passwords no`
+
+3) Use SSH Keys Instead of Passwords. Described above with snapshots.
+
+4) Allow Only Specific Clients. If you want your server to be reachable from only a specific IP address on port 22, then you should consider filtering connections at your firewall by adding a firewall rule on your router or update your iptables. 
+
+5) Disable Root Logins `PermitRootLogin no`
+
+
