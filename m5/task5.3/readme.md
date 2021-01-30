@@ -293,3 +293,12 @@ Connect to a virtual machine located behind NAT:
 
 ![](images/scr20.png)
  
+Also in port forwarding instead of ip 127.0.0.1 we can specify real ip (192.168.0.101) and we will try to be connected from Windows for example:
+
+![](images/scr21.png)
+
+![](images/scr22.png)
+
+5*. Intercept (capture) traffic (tcpdump, wireshark) while authorizing the remote client on the server using ssh, telnet, rlogin. Analyze the result.
+
+
