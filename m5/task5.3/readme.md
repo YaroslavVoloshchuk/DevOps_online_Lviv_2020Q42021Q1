@@ -254,4 +254,34 @@ We can configure file /etc/ssh/sshd_config
 
 5) Disable Root Logins `PermitRootLogin no`
 
+Then restart your SSHD service by entering one of the following commands to apply the changes:
+
+`service sshd restart`
+
+
+3. List the options for choosing keys for encryption in SSH. Implement 3 of them.
+
+SSH supports several public key algorithms for authentication keys. These include:
+
+    rsa - an old algorithm based on the difficulty of factoring large numbers. A key size of at least 2048 bits is recommended for RSA; 4096 bits is better. RSA is getting old and significant advances are being made in factoring. Choosing a different algorithm may be advisable. It is quite possible the RSA algorithm will become practically breakable in the foreseeable future. All SSH clients support this algorithm.
+
+    dsa - an old US government Digital Signature Algorithm. It is based on the difficulty of computing discrete logarithms. A key size of 1024 would normally be used with it. DSA in its original form is no longer recommended.
+
+    ecdsa - a new Digital Signature Algorithm standarized by the US government, using elliptic curves. This is probably a good algorithm for current applications. Only three key sizes are supported: 256, 384, and 521 (sic!) bits. We would recommend always using it with 521 bits, since the keys are still small and probably more secure than the smaller keys (even though they should be safe as well). Most SSH clients now support this algorithm.
+
+    ed25519 - this is a new algorithm added in OpenSSH. Support for it in clients is not yet universal. Thus its use in general purpose applications may not yet be
+
+
+The generation of rsa keys is implemented above.
+
+The generation of dsa keys:
+
+![](images/scr17.png)
+
+The generation of ed25519 keys:
+
+![](images/scr18.png)
+
+ 
+
 
