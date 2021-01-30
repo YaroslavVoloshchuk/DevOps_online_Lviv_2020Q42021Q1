@@ -283,5 +283,13 @@ The generation of ed25519 keys:
 ![](images/scr18.png)
 
  
+4. Implement port forwarding for the SSH client from the host machine to the guest Linux virtual machine behind NAT.
 
+Configure NAT on VM:
 
+![](images/scr19.png)
+
+Connect to a virtual machine located behind NAT:
+
+![](images/scr20.png)
+ 
