@@ -316,5 +316,5 @@ Telnet: `sudo tcpdump -i enp1s0 port 23`
 
 Rlogin: `sudo tcpdump -i enp1s0 port 513`
 
-
+SSH is a recently designed, high-security protocol. It uses strong cryptography to protect your connection against eavesdropping, hijacking and other attacks. Telnet and Rlogin are both older protocols offering minimal security. 
 
