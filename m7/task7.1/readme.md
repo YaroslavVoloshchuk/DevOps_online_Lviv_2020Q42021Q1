@@ -22,8 +22,8 @@ case "$1" in
 -target)  nmap $2 ;;
 esac
 shift
-done
-`
+done`
+
 ![](images/scr1.png)
 
 ![](images/scr2.png)
