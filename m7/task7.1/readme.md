@@ -9,9 +9,9 @@ TASK 7.1
  3. The --target key displays a list of open system TCP ports.
 
 
-`#!/bin/bash
+`#!/bin/bash`
 
-echo -e "\e[1;32mThe -all key displays the IP addresses and symbolic names of all hosts in the current subnet\e[0m"
+`echo -e "\e[1;32mThe -all key displays the IP addresses and symbolic names of all hosts in the current subnet\e[0m"
 echo -e "\e[1;32mThe -target key displays a list of open system TCP ports.\e[0m"
 
 echo
